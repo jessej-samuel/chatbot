@@ -6,8 +6,12 @@ const ChatInput = ({ sendMessage }) => {
   const send = (e) => {
     e.preventDefault();
     if (input) {
-      sendMessage(input);
+      sendMessage({
+        username: "user1",
+        text: input,
+      });
       setInput("");
+      document.getElementById("chatInput").click();
     }
   };
 
@@ -16,6 +20,7 @@ const ChatInput = ({ sendMessage }) => {
       <input
         value={input}
         onChange={(e) => setInput(e.target.value)}
+        id="chatInput"
         placeholder="Type a message"
         type="text"
       />
