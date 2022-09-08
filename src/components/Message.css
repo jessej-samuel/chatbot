@@ -1,0 +1,46 @@
+.message {
+  /* width: fit-content; */
+  display: grid;
+  grid-template-rows: 10px 1fr;
+  min-height: 40px;
+  width: 360px;
+  margin-top: 10px;
+  border-radius: 0.5rem;
+  padding: 0px 10px;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+/* .message for mobile */
+.user {
+  background-color: #457b9dcc;
+  color: #a8dadc;
+  /* margin-left: 24px; */
+  position: relative;
+  left: auto;
+}
+.bot {
+  background-color: #a8dadccc;
+  color: black;
+}
+.message-username {
+  font-size: small;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.message-text {
+  margin-top: 0.7rem;
+  margin-bottom: 0.2rem;
+  /* width: fit-content; */
+  word-wrap: break-word;
+}
+
+.timestamp {
+  font-size: xx-small;
+  font-weight: 700;
+  margin-top: 0.2rem;
+  color: rgba(0, 0, 0, 0.504);
+  border-radius: 99999px;
+  width: fit-content;
+  padding: 2px 4px;
+}

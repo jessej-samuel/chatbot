@@ -1,0 +1,23 @@
+.chat-history {
+  background-color: inherit;
+  margin-left: 0px;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  height: 75vh;
+  width: 100%;
+  /* scrollbar-width: thin; */
+}
+.chat-history::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* change background for alternate children */
+.chat-history > *:nth-child(2n) {
+  background-color: #a8dadc;
+  color: #1d3557;
+  text-align: right;
+}
+
+.timestamp {
+  font-size: x-small;
+}

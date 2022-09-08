@@ -1,13 +1,24 @@
 import logo from "../logo.svg";
+import { ReactComponent as Robo } from "../assets/robo.svg";
 import "./App.css";
 import Chat from "./Chat";
-import Waves from "./Waves";
 
 function App() {
   return (
-    <div className="App">
+    <div
+      className="App"
+      style={
+        {
+          // background: `url("/wp.jpg")`,
+          // backgroundSize: "cover",
+          // backdropFilter: ""
+        }
+      }
+    >
       <Chat />
-      <Waves />
+      <div className="robo-container">
+        <Robo />
+      </div>
     </div>
   );
 }

@@ -1,0 +1,21 @@
+.App {
+  /* background-color: #1d3557; */
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+/* for mobile */
+@media (max-width: 1080px) {
+  .App {
+    grid-template-columns: 1fr;
+  }
+  .robo-container {
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+  }
+}

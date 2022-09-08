@@ -1,12 +1,21 @@
-const ChatHistory = ({ messages }) => {
-  
+import Message from "./Message";
+import "./ChatHistory.css";
+import { useEffect, useRef } from "react";
+
+const ChatHistory = ({ messages, sendFeed }) => {
+  const scrollRef = useRef(null);
+  useEffect(
+    () => scrollRef.current.scrollTo(0, scrollRef.current.scrollHeight),
+    [messages.length]
+  );
   return (
-    <div className="chat-history">
+    <div className="chat-history" ref={scrollRef}>
       {messages.map((message, index) => (
-        <div key={index} className="message">
-          <div className="message-username">{message.username}</div>
-          <div className="message-text">{message.text}</div>
-        </div>
+        <Message
+          message={message}
+          key={index}
+          sendFeedback={(i) => sendFeed(i,messages[index-1].text)}
+        />
       ))}
     </div>
   );

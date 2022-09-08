@@ -1,0 +1,27 @@
+.chatInputForm {
+  margin-top: 10px;
+  width: 100%;
+  background-color: inherit;
+  position: sticky;
+  display: grid;
+  grid-template-columns: 8fr 2fr;
+  bottom: 0px;
+}
+#chatInput {
+  width: 100%;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5px 0px 0px 5px;
+  padding: 5px;
+  font-size: 1.2em;
+  outline: none !important;
+}
+#ask {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  border-radius: 0px 5px 5px 0px;
+  background-color: rgb(216,68,75);
+  color: white;
+  font-size: 1.2em;
+}
