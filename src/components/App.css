@@ -8,6 +8,41 @@
   overflow: hidden;
 }
 
+.robo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes head {
+  0%,
+  100% {
+    animation-timing-function: cubic-bezier(0.45, 0, 0.9, 0.55);
+  }
+  0% {
+    transform: translate(-176.19015px, -256.856px);
+  }
+  50% {
+    transform: translate(-176.19015px, -236.856px);
+    animate-timing-function: cubic-bezier(0, 0.45, 0.55, 0.9);
+  }
+  100% {
+    transform: translate(-176.19015px, -256.856px);
+  }
+}
+
+.head {
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: -176.19015 -256.856;
+  animation: head 1s linear infinite;
+}
+
+.spin {
+  display: inline-block;
+  overflow: hidden;
+  background: #ffffff;
+}
 /* for mobile */
 @media (max-width: 1080px) {
   .App {

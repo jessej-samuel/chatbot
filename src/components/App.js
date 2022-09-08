@@ -1,4 +1,3 @@
-import logo from "../logo.svg";
 import { ReactComponent as Robo } from "../assets/robo.svg";
 import "./App.css";
 import Chat from "./Chat";

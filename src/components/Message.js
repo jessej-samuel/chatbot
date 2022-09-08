@@ -8,7 +8,7 @@ const Message = ({ message, sendFeedback }) => {
     >
       <div className="message-username">{message.username}</div>
       <div className="message-text">{message.text}</div>
-      {message.username.toLowerCase() === "bot" ? (
+      {/* {message.username.toLowerCase() === "bot" ? (
         // Display yes/ no button that will post to /getfeedback
         <div className="feedback">
           <button className="feedback-button" onClick={() => sendFeedback(1)}>
@@ -20,7 +20,7 @@ const Message = ({ message, sendFeedback }) => {
         </div>
       ) : (
         <></>
-      )}
+      )} */}
       <div className="timestamp">{message.time}</div>
     </div>
   );

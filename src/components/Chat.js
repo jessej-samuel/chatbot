@@ -23,6 +23,38 @@ const Chat = () => {
       username: "user2",
       text: "I'm fine, thanks",
     },
+    {
+      username: "user1",
+      text: "Hello",
+    },
+    {
+      username: "user2",
+      text: "Hi",
+    },
+    {
+      username: "user1",
+      text: "How are you?",
+    },
+    {
+      username: "user2",
+      text: "I'm fine, thanks",
+    },
+    {
+      username: "user1",
+      text: "Hello",
+    },
+    {
+      username: "user2",
+      text: "Hi",
+    },
+    {
+      username: "user1",
+      text: "How are you?",
+    },
+    {
+      username: "user2",
+      text: "I'm fine, thanks",
+    },
   ]);
   const [thinking, setThinking] = useState(false);
   const onMessageSend = async (message) => {
